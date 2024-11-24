@@ -42,11 +42,15 @@ const Courses = () => {
         <h1 className="text-7xl my-2">Courses</h1>
         <hr />
         <div className="flex flex-wrap gap-4 h-60 my-4">
-          {course.map((course) => {
+          {course.map((currcourse) => {
             return (
               <>
                 <div className="md:w-1/5 h-full">
-                  <Course data={course} key={course.id} />
+                  <Course
+                    setCourse={setCourse}
+                    data={currcourse}
+                    key={currcourse.id}
+                  />
                 </div>
               </>
             );

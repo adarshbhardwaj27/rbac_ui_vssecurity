@@ -94,6 +94,7 @@ const AssignmentPage = () => {
     <>
       <div className="content flex flex-col gap-6">
         <h1 className="text-7xl my-2">{currAssignment.title}</h1>
+        <hr />
         <p className="text-3xl">
           <strong>Course: </strong>
           {currCourse.name}

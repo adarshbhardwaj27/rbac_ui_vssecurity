@@ -6,18 +6,18 @@ import {
   MdHelpOutline,
   MdOutlineFeedback,
 } from "react-icons/md";
-import { RiWindyFill } from "react-icons/ri";
+import { RiAdminLine, RiWindyFill } from "react-icons/ri";
 
 
 export const menuOptions = [
-  { name: "Home", to: "/dashboard/account-summary", Icon: HiOutlineHome },
-  { name: "Teams", to: "/dashboard/teams", Icon: AiOutlineTeam },
+  { name: "Home", to: "/courses", Icon: HiOutlineHome },
+  { name: "Admin", to: "/admin", Icon: RiAdminLine },
   { name: "Accounts", to: "/dashboard/accounts", Icon: MdOutlineAccountCircle },
   { name: "Reports", to: "/dashboard/reports", Icon: TbReportAnalytics },
   { name: "Flows", to: "/dashboard/flows", Icon: RiWindyFill },
 ];
 export const menuOptionsTwo = [
-  { name: "Settings", to: "/dashboard#", Icon: HiOutlineCog },
-  { name: "Get Help", to: "/dashboard#", Icon: MdHelpOutline },
-  { name: "Submit feedback", to: "/dashboard#", Icon: MdOutlineFeedback },
+  { name: "Settings", to: "/courses", Icon: HiOutlineCog },
+  { name: "Get Help", to: "/courses", Icon: MdHelpOutline },
+  { name: "Submit feedback", to: "/courses", Icon: MdOutlineFeedback },
 ];

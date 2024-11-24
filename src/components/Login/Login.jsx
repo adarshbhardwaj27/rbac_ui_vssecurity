@@ -14,8 +14,19 @@ const Login = () => {
     // Sample users for authentication
     const users = [
       { username: "student", password: "student", role: "student" },
-      { username: "teacher", password: "teacher", role: "teacher" },
+      { username: "instructor", password: "instructor", role: "instructor" },
       { username: "admin", password: "admin", role: "admin" },
+      { username: "user1", password: "12345", role: "student" },
+      { username: "teacher1", password: "12345", role: "instructor" },
+      { username: "admin1", password: "admin123", role: "admin" },
+      { username: "user2", password: "password1", role: "student" },
+      { username: "teacher2", password: "password1", role: "instructor" },
+      { username: "admin2", password: "admin123", role: "admin" },
+      { username: "user3", password: "12345", role: "student" },
+      { username: "teacher3", password: "12345", role: "instructor" },
+      { username: "admin3", password: "admin123", role: "admin" },
+      { username: "user4", password: "password1", role: "student" },
+      { username: "teacher4", password: "password1", role: "instructor" },
     ];
 
     if (username === "" || password === "") {
@@ -29,7 +40,7 @@ const Login = () => {
 
     if (user) {
       login(user); // Use context's login to set the user
-      if (user.role === "student" || user.role === "teacher") {
+      if (user.role === "student" || user.role === "instructor") {
         navigate("/courses");
       } else if (user.role === "admin") {
         navigate("/admin");

@@ -5,21 +5,20 @@ const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
-  const login = (userInfo) => setUser(userInfo);
+  const login = (userInfo) => {
+    setUser(userInfo);
+  };
   const logout = () => setUser(null);
 
   const users = [
     { username: "student", password: "student", role: "student" },
-    { username: "teacher", password: "teacher", role: "teacher" },
+    { username: "instructor", password: "instructor", role: "instructor" },
     { username: "admin", password: "admin", role: "admin" },
   ];
 
   const hasPermission = (role, reqrol) => {
-    if (reqrol == role) {
-      return true;
-    } else {
-      return false;
-    }
+    if (reqrol.includes(role)) return true;
+    else return false;
   };
 
   return (

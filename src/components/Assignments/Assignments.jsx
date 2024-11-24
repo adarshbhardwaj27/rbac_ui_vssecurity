@@ -48,7 +48,11 @@ const Assignments = () => {
             return (
               <>
                 <div className="md:w-1/5 h-full">
-                  <Assignment data={course} key={course.id} />
+                  <Assignment
+                    setAssignments={setAssignments}
+                    data={course}
+                    key={course.id}
+                  />
                 </div>
               </>
             );

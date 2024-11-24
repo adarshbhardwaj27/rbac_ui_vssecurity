@@ -40,9 +40,9 @@ const NavBar = ({ toggleHeader }) => {
         <div className="py-3">
           <MenuItems links={menuOptions[0]} currentPage={currentPage} />
           <MenuItems links={menuOptions[1]} currentPage={currentPage} />
-          <MenuItems links={menuOptions[2]} currentPage={currentPage} />
+          {/* <MenuItems links={menuOptions[2]} currentPage={currentPage} />
           <MenuItems links={menuOptions[3]} currentPage={currentPage} />
-          <MenuItems links={menuOptions[4]} currentPage={currentPage} />
+          <MenuItems links={menuOptions[4]} currentPage={currentPage} /> */}
         </div>
         <div className="pb-3">
           <h3 className="py-3 px-3 text-disabled-gray divider text-sm text-left font-bold">
