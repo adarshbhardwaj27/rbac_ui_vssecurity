@@ -17,7 +17,7 @@ export const menuOptions = [
   { name: "Flows", to: "/dashboard/flows", Icon: RiWindyFill },
 ];
 export const menuOptionsTwo = [
-  { name: "Settings", to: "/courses", Icon: HiOutlineCog },
-  { name: "Get Help", to: "/courses", Icon: MdHelpOutline },
-  { name: "Submit feedback", to: "/courses", Icon: MdOutlineFeedback },
+  { name: "Settings", to: "/login", Icon: HiOutlineCog },
+  { name: "Get Help", to: "/login", Icon: MdHelpOutline },
+  { name: "Submit feedback", to: "/login", Icon: MdOutlineFeedback },
 ];
