@@ -13,8 +13,8 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`bg-contrast pb-2 relative border-r-2 rounded-br-2xl shadow-lg hidden md:block w-[20vw] max-w-[300px]  ${
-        toggle ? " w-increasing" : " w-decreasing"
+      className={`bg-contrast pb-2 relative border-r-2 rounded-br-2xl shadow-lg hidden md:block w-[20vw] max-w-[300px]   ${
+        toggle ? " w-increasing min-w-[200px]" : " w-decreasing min-w-[100px]"
       }`}
     >
       <NavBar />

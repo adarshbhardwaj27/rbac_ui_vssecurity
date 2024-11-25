@@ -85,7 +85,7 @@ const Layout = () => {
     <>
       {/* <Login /> */}
       <section className="flex flex-col w-screen h-screen max-h-screen">
-        <div className="logout absolute top-14 md:top-4 right-4 cursor-pointer z-50 ">
+        <div className="logout absolute top-2 md:top-4 right-16 cursor-pointer z-50 ">
           <Link to="/login" className="cursor-pointer">
             <button className="bg-red-600 text-white p-2 rounded-lg cursor-pointer">
               Logout

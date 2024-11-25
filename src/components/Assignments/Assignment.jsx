@@ -5,10 +5,7 @@ import { AuthContext } from "../Authentication/AuthProvider";
 const Assignment = ({ data, setAssignments }) => {
   const { user } = useContext(AuthContext);
   return (
-    <div
-      className="flex flex-col justify-between border shadow-md h-full p-4 "
-      key={data.assignmentId} // Use assignmentId as the key
-    >
+    <div className="flex flex-col justify-between border shadow-md h-full p-4 ">
       <div>
         <h1 className="text-xl font-semibold min-h-16">{data.title}</h1>{" "}
         {/* Title of the assignment */}
@@ -17,7 +14,7 @@ const Assignment = ({ data, setAssignments }) => {
         <h3 className="italic opacity-50 h-12">{data.description}</h3>{" "}
         {/* Description of the assignment */}
       </div>
-      <div className="button">
+      <div className="button my-2">
         <Link to={`/course/${data.courseId}/assignment/${data.assignmentId}`}>
           {/* Link to the course and assignment */}
           <button
@@ -30,7 +27,7 @@ const Assignment = ({ data, setAssignments }) => {
       </div>
       {(user.role === "instructor" || user.role === "admin") && (
         <>
-          <div className="button">
+          <div className="button mb-2">
             <button
               type="button"
               className="w-full bg-red-600 text-white p-1 rounded-sm"
