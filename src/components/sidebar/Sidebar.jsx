@@ -3,11 +3,6 @@ import NavBar from "../navbar/NavBar";
 import { useState } from "react";
 
 const Sidebar = () => {
-  // TODO: Make this sidebar responsive and adjustable
-  // Current max-width is 300px
-
-  // TODO: Make this sidebar collapsible
-  // Colapsable button
 
   const [toggle, setToggle] = useState(false);
 
