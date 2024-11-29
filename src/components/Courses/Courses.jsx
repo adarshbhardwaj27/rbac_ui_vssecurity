@@ -40,7 +40,7 @@ const Courses = () => {
 
   return (
     <div className="courses">
-      <h1 className="text-7xl my-2">Courses</h1>
+      <h1 className="md:text-7xl text-6xl my-2">Courses</h1>
       <hr />
       <div className="flex flex-wrap justify-center gap-6 my-4 w-full">
         {course.map((currcourse) => {
