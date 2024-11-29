@@ -5,7 +5,7 @@ import { AuthContext } from "../Authentication/AuthProvider";
 const Assignment = ({ data, setAssignments }) => {
   const { user } = useContext(AuthContext);
   return (
-    <div className="flex flex-col justify-between border shadow-md h-full p-4 ">
+    <div className="flex flex-col justify-between border shadow-md p-4 h-full w-full bg-white">
       <div>
         <h1 className="text-xl font-semibold min-h-16">{data.title}</h1>{" "}
         {/* Title of the assignment */}
@@ -19,7 +19,7 @@ const Assignment = ({ data, setAssignments }) => {
           {/* Link to the course and assignment */}
           <button
             type="button"
-            className="w-full bg-black text-white p-1 rounded-sm"
+            className="w-full bg-black text-white p-1 rounded-sm text-center inline-block"
           >
             View
           </button>

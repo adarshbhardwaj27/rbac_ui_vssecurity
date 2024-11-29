@@ -41,12 +41,15 @@ const Assignments = () => {
   return (
     <>
       <div className="assignments">
-        <h1 className="text-7xl my-2">Assignments</h1>
+        <h1 className="md:text-7xl text-6xl my-2">Assignments</h1>
         <hr />
-        <div className="flex flex-wrap gap-4 h-60 my-4">
+        <div className="flex flex-wrap justify-center gap-6 my-4 w-full">
           {assignments.map((course) => {
             return (
-              <div className="md:w-1/5 h-full" key={course.assignmentId}>
+              <div
+                className="flex justify-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-2"
+                key={course.assignmentId}
+              >
                 <Assignment setAssignments={setAssignments} data={course} />
               </div>
             );

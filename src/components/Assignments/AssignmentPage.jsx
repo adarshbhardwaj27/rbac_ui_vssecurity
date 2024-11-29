@@ -93,10 +93,13 @@ const AssignmentPage = () => {
   return (
     <>
       <div className="content flex flex-col gap-6">
-        <h1 className="text-7xl my-2">{currAssignment.title}</h1>
+        <h1 className="md:text-7xl text-5xl my-2">{currAssignment.title}</h1>
         <hr />
-        <p className="text-3xl">
-          <strong>Course: </strong>
+        <p className="text-2xl">
+          <strong>
+            Course:
+            <br />{" "}
+          </strong>
           {currCourse.name}
         </p>
         <p className="text-2xl">
@@ -108,7 +111,10 @@ const AssignmentPage = () => {
           {currAssignment.dueDate}
         </p>
         <p className="text-2xl">
-          <strong>Description: </strong>
+          <strong>
+            Description:
+            <br />{" "}
+          </strong>
           {currAssignment.description}
         </p>
         <div className="uploadDiv flex flex-col gap-6 max-w-[300px] border-2 shadow-sm p-2">
